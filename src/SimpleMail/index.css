@@ -1,0 +1,28 @@
+.preview-mail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: stretch;
+  gap: 20px;
+}
+
+.preview-author {
+  font-size: 20px;
+}
+
+.preview-title {
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview-date {
+  text-align: center;
+}
