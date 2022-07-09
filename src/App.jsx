@@ -19,9 +19,6 @@ const App = () => {
       <View activePanel="main">
         <Panel id="main">
           <PanelHeader>Malluto</PanelHeader>
-          <Group header={<Header mode="secondary">Загрузка</Header>}>
-            <Input type="file" />
-          </Group>
           <Group header={<Header mode="secondary">Список</Header>}>
             <List>
               {data.map((e) => (

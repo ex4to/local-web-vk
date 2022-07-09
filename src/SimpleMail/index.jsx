@@ -2,7 +2,6 @@ import { Cell } from "@vkontakte/vkui";
 import "./index.css";
 
 const SimpleMail = ({ author, title, mailBody, sendTime }) => {
-  console.log(author);
   return (
     <Cell expandable>
       <div className="preview-mail">
