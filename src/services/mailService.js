@@ -8,7 +8,7 @@ class MailService {
     };
     try {
       const { foo } = await fetch(
-        "http://dollblues.kheynov.ru:3500/api/v1/postjson",
+        "https://dollblues.kheynov.ru/api/v1/postjson",
         reqOptions
       ).then((res) => res.json());
       return foo;
@@ -19,7 +19,7 @@ class MailService {
 
   async loadFile() {
     try {
-      return await fetch("http://dollblues.kheynov.ru:3500/api/v1/getjson").then((res) =>
+      return await fetch("https://dollblues.kheynov.ru/api/v1/getjson").then((res) =>
         res.json()
       );
     } catch (err) {
@@ -28,7 +28,7 @@ class MailService {
   }
 
   async makeCheckMails(mails) {
-    await fetch("http://dollblues.kheynov.ru:3500/api/v1/makeChecked", {
+    await fetch("https://dollblues.kheynov.ru/api/v1/makeChecked", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ class MailService {
   }
 
   async makeUncheckMails(mails) {
-    await fetch("http://dollblues.kheynov.ru:3500/api/v1/makeUnchecked", {
+    await fetch("https://dollblues.kheynov.ru/api/v1/makeUnchecked", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
