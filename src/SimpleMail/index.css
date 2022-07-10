@@ -1,8 +1,20 @@
 .preview-mail {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 25px 1fr;
   justify-items: stretch;
   gap: 20px;
+  font-weight: normal;
+}
+
+.unread {
+  font-weight: bold;
+}
+
+.author-block {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 .preview-author {
@@ -11,18 +23,34 @@
 
 .preview-title {
   font-size: 16px;
-  font-weight: bold;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .preview-text {
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .preview-date {
-  text-align: center;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.intro {
+  grid-area: 2 / 2;
+  margin: 10px;
+  height: auto;
+  overflow: auto;
+}
+
+.preview-file {
+  float: left;
+  height: auto;
+  border: 1px solid;
+  border-radius: 6px;
 }
