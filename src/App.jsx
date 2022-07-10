@@ -1,4 +1,4 @@
-import { AdaptivityProvider, ConfigProvider, Select } from "@vkontakte/vkui";
+import { AdaptivityProvider, ConfigProvider } from "@vkontakte/vkui";
 import {
   AppRoot,
   View,

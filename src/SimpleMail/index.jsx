@@ -1,4 +1,4 @@
-import { Avatar, Cell, Checkbox, Text, Gallery } from "@vkontakte/vkui";
+import { Avatar, Cell, Checkbox, Text } from "@vkontakte/vkui";
 import { useEffect, useState } from "react";
 import {
   Icon20PrometeyCircleFillRed,
