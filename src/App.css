@@ -18,6 +18,7 @@
   background: repeat center center fixed;
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/7c627891307417.5e2ee30601623.jpg");
   background-size: cover;
+  --background_content: rgb(212, 255, 211);
 }
 
 .cats > div {
@@ -25,10 +26,18 @@
   --header_background: #fcdbc6ea;
   background-image: url("https://i.pinimg.com/736x/85/97/71/8597715e33c787bd7f33626dad2194f9.jpg");
   background-size: cover;
+  --background_content: rgb(255, 232, 236);
 }
 
 .contrast {
   --background-page: white;
+  --background-content: black;
   --accent: black;
-  --landing_text_primary: yellow;
+  --background_content: white;
+  --button_primary_background: #fff;
+  --button_primary_foreground: #000;
+}
+
+.contrast > div {
+  background-color: #000;
 }
